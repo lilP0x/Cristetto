@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('Etiquetas\ Cristetto.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    background-color: #e6d7b3;
+    /*background-color: #5e723e;*/ 
+}
+
+.logo-container {
+    flex-shrink: 0;
+}
+
+.logo {
+    max-width: 35%; 
+    height: auto;
+}
+
+.banner-items {
+    display: flex;
+    width: 75%; 
+    justify-content: flex-end;
+}
+
+.banner-items ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.banner-items li {
+    margin-left: 5%; 
+}
+
+.banner-items a {
+    color: #610129; 
+    font-weight: bold;
+    font-size: 1.5em; 
+}
+
+.banner-items a:hover {
+    color: #217521; 
+}
+
+
+.slogan-container{
+    color: #e6d7b3;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slogan{
+    font-size: 3em;
+}
+
+
+.container-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6d7b3;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 10px;
+}
+
+.item:hover {
+    background-color: #217521; 
+    transition: background-color 0.3s, transform 0.5s; 
+    transform: scale(1.1);
+}
+
+
+.conocenos-container{
+    background-color:#e6d7b3;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 20px;
+}
+
+.conocenos{
+    padding: 1%;
+}
+
+.item img{
+    width: 70%;
+    height: auto;
+}
+
+.iconos {
+    display: flex;
+    gap: 20px;
+}
+
+.icono {
+    font-size: 3em; 
+    color: #e6d7b3; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+.icono:hover {
+    color: #217521; 
+}
+
+@media (max-width: 768px) {
+    .banner-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        max-width: 30%;
+    }
+
+    .banner-items {
+        width: 100%;
+        justify-content: center;
+        margin-top: 5%;
+    }
+
+    .banner-items ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-items li {
+        margin: 5% 0; 
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        max-width: 40%;
+    }
+
+    .banner-items a {
+        font-size: 1em; 
+    }
+
+    .banner-items li {
+        margin: 5% 0;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.item {
+    opacity: 0; 
+    animation: fadeIn 0.5s forwards; 
+}
+
+.item:nth-child(1) {
+    animation-delay: 0.5s; 
+}
+
+.item:nth-child(2) {
+    animation-delay: 1s; 
+}
+
+.item:nth-child(3) {
+    animation-delay: 1.5s; 
+}
+
+
