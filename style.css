@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('Etiquetas\ Cristetto.png');
+    background-image: url('/fondo/Etiquetas\ Cristetto.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,7 +18,6 @@ a {
     align-items: center;
     padding: 2%;
     background-color: #e6d7b3;
-    /*background-color: #5e723e;*/ 
 }
 
 .logo-container {
@@ -59,8 +58,7 @@ a {
     color: #217521; 
 }
 
-
-.slogan-container{
+.slogan-container {
     color: #e6d7b3;
     padding: 5%;
     display: flex;
@@ -68,17 +66,16 @@ a {
     justify-content: center;
 }
 
-.slogan{
+.slogan {
     font-size: 3em;
 }
 
-
-.container-items{
+.container-items {
     display: flex;
     justify-content: space-between;
 }
 
-.item{
+.item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,6 +83,8 @@ a {
     padding: 2%;
     margin: 2%;
     border-radius: 10px;
+    opacity: 0; 
+    animation: fadeIn 0.5s forwards; 
 }
 
 .item:hover {
@@ -94,19 +93,18 @@ a {
     transform: scale(1.1);
 }
 
-
-.conocenos-container{
-    background-color:#e6d7b3;
+.conocenos-container {
+    background-color: #e6d7b3;
     margin-left: 10%;
     margin-right: 10%;
     font-size: 20px;
 }
 
-.conocenos{
+.conocenos {
     padding: 1%;
 }
 
-.item img{
+.item img {
     width: 70%;
     height: auto;
 }
@@ -127,16 +125,24 @@ a {
     color: #217521; 
 }
 
-.footpage-container{
+.footpage-container {
     background-color: black;
 }
 
+.images-container {
+    display: flex;
+    justify-content: space-between;
+}
 
+.images {
+    flex: 1;
+    width: 2%;
+}
 
-.images img{
-    width: 30%;
+.images img {
+    width: 35%;
     height: auto;
-
+    display: block;
 }
 
 @media (max-width: 768px) {
@@ -179,7 +185,6 @@ a {
     }
 }
 
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -187,11 +192,6 @@ a {
     to {
         opacity: 1;
     }
-}
-
-.item {
-    opacity: 0; 
-    animation: fadeIn 0.5s forwards; 
 }
 
 .item:nth-child(1) {
@@ -205,5 +205,3 @@ a {
 .item:nth-child(3) {
     animation-delay: 1.5s; 
 }
-
-
