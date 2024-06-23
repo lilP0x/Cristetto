@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('fondo/Etiquetas Cristetto.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+li {
+    margin-bottom: 10px; 
+}
+
+.title {
+    text-align: center;
+    padding: 20px;
+    background-color: #e6d7b3;
+}
+
+.carrusel {
+    width: 40%;
+    max-width: 120em;
+    padding: 2em;
+    overflow: hidden;
+    margin: 0 auto; 
+}
+
+.grande {
+    display: flex;
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+    width: 100%;
+
+}
+
+.img {
+    width: 105%;
+    min-height: 10vh;
+}
+
+
+.punto {
+    width: 1em;
+    height: 1em;
+    margin: 0 0.5em;
+    background-color: gray; /*hay que cambiar esto*/ 
+    border-radius: 50%;
+    transition: width 0.3s, height 0.3s, background-color 0.3s;
+}
+
+.puntos {
+    width: 100%;
+    margin: 1em 0 0;
+    padding: 0.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activo {
+    background-color: lightblue;
+}
