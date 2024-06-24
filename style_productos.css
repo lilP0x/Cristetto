@@ -41,6 +41,7 @@ li {
 
 .img {
     width: 105%;
+    padding: 3%;
     min-height: 10vh;
 }
 
