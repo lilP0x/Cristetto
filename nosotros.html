@@ -12,19 +12,18 @@
 <body>
     <div class="banner-container">
         <div class="logo-container">
-            <a href="index.html"><img class="logo" src="/logo/Cristetto-Black.png" alt="LOGO"></a>
+            <a href=""><img class="logo" src="/logo/Cristetto-Black.png" alt="LOGO"></a>
         </div>
         <div class="banner-items">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="preguntas_frecuentes.html">Preguntas Frecuentes</a></li>
-                <li><a href="contactenos.html">Contactenos</a></li>
+                <li><a href="index.html" id="home-link">Inicio</a></li>
+                <li><a href="productos.html" id="productos-link">Productos</a></li>
+                <li><a href="nosotros.html" id="nosotros-link">Nosotros</a></li>
+                <li><a href="blog.html" id="blog-link">Blog</a></li>
+                <li><a href="preguntas_frecuentes.html" id="faq-link">Preguntas Frecuentes</a></li>
+                <li><a href="contactenos.html" id="contact-link">Contactenos</a></li>
             </ul>
         </div>
-
     </div>
 
 
@@ -48,7 +47,7 @@
         <div class="info-footpage">
             <a href=""><img class="logo-footpage" src="/logo/Cristetto-Black.png" alt="LOGO"></a>
             <h2>
-                El mejor Café especial tostado colombiano.
+                Café especial tostado colombiano.
             </h2>
         </div>
 
@@ -75,29 +74,29 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-            const sloganContainer = document.querySelector('.initial-page .slogan-container');
-            const button = document.querySelector('.initial-page button');
+        const sloganContainer = document.querySelector('.initial-page .slogan-container');
+        const button = document.querySelector('.initial-page button');
 
-            // Añadir la clase 'show' para iniciar la animación
-            setTimeout(() => {
-                sloganContainer.classList.add('show');
-                button.classList.add('show');
-            }, 100); // Retardo para asegurar que la página ha terminado de cargar
+        // Añadir la clase 'show' para iniciar la animación
+        setTimeout(() => {
+            sloganContainer.classList.add('show');
+            button.classList.add('show');
+        }, 100); // Retardo para asegurar que la página ha terminado de cargar
 
-            // Highlight active link in the menu
-            const page = window.location.pathname.split('/').pop();
-            const linkMap = {
-                'index.html': 'home-link',
-                'nosotros.html': 'nosotros-link',
-                'productos.html': 'productos-link',
-                'blog.html': 'blog-link',
-                'preguntas_frecuentes.html': 'faq-link',
-                'contactenos.html': 'contact-link'
-            };
-            const activeLink = document.getElementById(linkMap[page] || 'home-link');
-            if (activeLink) {
-                activeLink.classList.add('active');
-            }
-        });
+        // Highlight active link in the menu
+        const page = window.location.pathname.split('/').pop();
+        const linkMap = {
+            'index.html': 'home-link',
+            'nosotros.html': 'nosotros-link',
+            'productos.html': 'productos-link',
+            'blog.html': 'blog-link',
+            'preguntas_frecuentes.html': 'faq-link',
+            'contactenos.html': 'contact-link'
+        };
+        const activeLink = document.getElementById(linkMap[page] || 'home-link');
+        if (activeLink) {
+            activeLink.classList.add('active');
+        }
+    });
 </script>
 </html>

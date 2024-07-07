@@ -32,7 +32,7 @@ a:hover {
 }
 
 .logo {
-    max-width: 35%; 
+    max-width: 20%; 
     height: auto;
 }
 
@@ -58,7 +58,7 @@ a:hover {
 .banner-items a {
     color: #610129; 
     font-weight: bold;
-    font-size: 1.3em; 
+    font-size: 0.8em; 
 }
 
 .banner-items a:hover {
@@ -73,12 +73,12 @@ a:hover {
     justify-content: baseline;
 }
 
-.initial-page{
+.initial-page {
     margin: 15%;
     display: flex;
-    flex-direction: column; /* Align elements in a column */
+    flex-direction: column;
     justify-content: baseline;
-    align-items:baseline;
+    align-items: baseline;
 }
 
 .slogan {
@@ -88,15 +88,15 @@ a:hover {
 button {
     background-color: #e6d7b3; 
     color: #610129; 
-    font-size: 1em; 
-    padding: 15px 30px; 
+    font-size: 0.5em; 
+    padding: 10px 20px; 
     border: none; 
     border-radius: 10px; 
     cursor: pointer; 
     transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Inicialmente fuera de la vista hacia la izquierda */
+/* Initially off-screen to the left */
 .initial-page .slogan-container,
 .initial-page button {
     opacity: 0;
@@ -104,7 +104,7 @@ button {
     transition: opacity 0.5s ease-out, transform 1.5s ease-out;
 }
 
-/* Clase para aplicar la animación al estar en vista */
+/* Class to apply animation when in view */
 .initial-page .slogan-container.show,
 .initial-page button.show {
     opacity: 1;
@@ -186,7 +186,7 @@ button:hover {
 }
 
 .icono {
-    font-size: 3em; 
+    font-size: 2em; 
     color: #610129; 
     text-decoration: none; 
     transition: color 0.3s; 
@@ -203,14 +203,14 @@ button:hover {
 .images-container {
     display: flex;
     justify-content: space-between;
-    max-width: 70%; /* Limit the total width of the container */
-    margin: 0 auto; /* Center the container */
-    padding: 0 10%; /* Side margins */
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 0 10%;
 }
 
 .images {
     flex: 1;
-    margin: 0 40px; 
+    margin: 0 40px;
     padding: auto;
 }
 
@@ -236,24 +236,25 @@ button:hover {
 .links-footpage {
     padding: 5%;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 0.8em;
 }
 
 .vertical-line {
-    width: 2px; /* Grosor de la línea */
-    height: 10em; /* Altura de la línea */
-    background-color: #610129; /* Color de la línea */
-    margin: 0 20px; /* Espaciado a los lados */
-    align-self: stretch; /* Para que la línea ocupe toda la altura del contenedor */
+    width: 2px;
+    height: 10em;
+    background-color: #610129;
+    margin: 0 20px;
+    align-self: stretch;
 }
 
-/* Estilo para el enlace activo */
+/* Active link style */
 .active {
-    color: #217521; /* Cambia el color a tu preferencia */
+    color: #217521;
     font-weight: bold;
-    text-decoration: underline; /* Opcional: subrayar el enlace activo */
+    text-decoration: underline;
 }
 
 /* Rest of your CSS */
@@ -265,36 +266,77 @@ button:hover {
     }
 
     .logo {
-        max-width: 30%;
+        max-width: 25%;
     }
-
     .banner-items {
-        width: 100%;
-        justify-content: center;
-        margin-top: 5%;
+        width: 70%;
     }
-
-    .banner-items ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .banner-items li {
-        margin: 5% 0; 
+    .banner-items a {
+        font-size: 1em;
     }
 }
 
-@media (max-width: 480px) {
-    .logo {
-        max-width: 40%;
+@media (max-width: 992px) {
+    .banner-container {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
-
-    .banner-items a {
-        font-size: 1em; 
+    .banner-items {
+        width: 100%;
+        justify-content: center;
     }
-
     .banner-items li {
-        margin: 5% 0;
+        margin-left: 3%;
+    }
+    .banner-items a {
+        font-size: 0.9em;
+    }
+    .initial-page {
+        margin: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        max-width: 30%;
+    }
+    .banner-items ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 1em;
+    }
+    .banner-items li {
+        margin-left: 0;
+        margin-bottom: 2%;
+    }
+    .banner-items a {
+        font-size: 0.8em;
+    }
+    .slogan {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        max-width: 20%;
+    }
+    .banner-items a {
+        font-size: 0.7em;
+    }
+    .slogan {
+        font-size: 2em;
+    }
+    .initial-page {
+        margin: 5%;
+    }
+    button {
+        font-size: 0.7em;
+        padding: 8px 15px;
+    }
+    .conocenos {
+        width: 80%;
     }
 }
 
