@@ -5,28 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cristetto</title>
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="style_productos.css">
+    <link rel="stylesheet" href="/css/style_productos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+
+    <div class="banner-container">
+        <div class="logo-container">
+            <a href=""><img class="logo" src="/logo/Cristetto-Black.png" alt="LOGO"></a>
+        </div>
+        <div class="banner-items">
+            <ul>
+                <li><a href="index.html" id="home-link">Inicio</a></li>
+                <li><a href="productos.html" id="productos-link">Productos</a></li>
+                <li><a href="nosotros.html" id="nosotros-link">Nosotros</a></li>
+                <li><a href="blog.html" id="blog-link">Blog</a></li>
+                <li><a href="preguntas_frecuentes.html" id="faq-link">Preguntas Frecuentes</a></li>
+                <li><a href="contactenos.html" id="contact-link">Contactenos</a></li>
+            </ul>
+        </div>
+    </div>
     <div class="title">
         <h1>Nuestros productos</h1>
     </div>
     
     <div class="container-items">
 
-        <div class="item">            
+        <div class="item1">
             <img src="/imagenes/1.png" alt="">
+            <div class="description">
+                <p>Aromas a chocolate mas especias</p>
+                <p class="price">$32,000 </p>
+            </div>
         </div>
 
-        <div class="item">            
+        <div class="item2">
             <img src="/imagenes/2.png" alt="">
+            <div class="description">
+                <p>Aroma frutal con vainilla y sabores a té de frutos rojos mas citricos </p>
+                <p class="price">$35,000 </p>
+            </div>
         </div>
 
-        <div class="item">            
+        <div class="item3">
             <img src="/imagenes/3.png" alt="">
+            <div class="description">
+                <p>Descripción del Producto 3</p>
+                <p class="price">$39,000 </p>
+            </div>
         </div>
         
     </div>
+
+    
+    <div class="footpage-container">
+        <div class="info-footpage">
+            <a href=""><img class="logo-footpage" src="/logo/Cristetto-Black.png" alt="LOGO"></a>
+            <h3>
+                Café especial tostado colombiano.
+            </h3>
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <div class="links-footpage">
+            <a href="nosotros.html">Nosotros</a>
+            <a href="productos.html">Nuestros productos</a>
+            <a href="blog.html">Blog</a>
+            <a href="contactenos.html">Contactenos</a>
+        </div>
+        
+        <div class="iconos">
+            <a href="https://www.instagram.com/cristettocafe/" target="_blank" class="icono">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/tu_numero_de_whatsapp" target="_blank" class="icono">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sloganContainer = document.querySelector('.initial-page .slogan-container');
+            const button = document.querySelector('.initial-page button');
+
+            // Añadir la clase 'show' para iniciar la animación
+            setTimeout(() => {
+                sloganContainer.classList.add('show');
+                button.classList.add('show');
+            }, 100); // Retardo para asegurar que la página ha terminado de cargar
+
+            // Highlight active link in the menu
+            const page = window.location.pathname.split('/').pop();
+            const linkMap = {
+                'index.html': 'home-link',
+                'nosotros.html': 'nosotros-link',
+                'productos.html': 'productos-link',
+                'blog.html': 'blog-link',
+                'preguntas_frecuentes.html': 'faq-link',
+                'contactenos.html': 'contact-link'
+            };
+            const activeLink = document.getElementById(linkMap[page] || 'home-link');
+            if (activeLink) {
+                activeLink.classList.add('active');
+            }
+        });
+    </script>
 </body>
 </html>

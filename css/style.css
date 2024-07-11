@@ -154,9 +154,6 @@ button:hover {
 }
 
 .mini-text {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
     gap: 10px; /* Espaciado entre las celdas del grid */
 }
 
