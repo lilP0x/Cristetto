@@ -2,11 +2,13 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('/fondo/Etiquetas Cristetto.png');
+    background-image: url('/fondo/Etiquetas\ Cristetto.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
+
 
 a {
     text-decoration: none;
@@ -256,90 +258,3 @@ button:hover {
 
 /* Rest of your CSS */
 
-@media (max-width: 768px) {
-    .banner-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo {
-        max-width: 25%;
-    }
-    .banner-items {
-        width: 70%;
-    }
-    .banner-items a {
-        font-size: 1em;
-    }
-}
-
-@media (max-width: 992px) {
-    .banner-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .banner-items {
-        width: 100%;
-        justify-content: center;
-    }
-    .banner-items li {
-        margin-left: 3%;
-    }
-    .banner-items a {
-        font-size: 0.9em;
-    }
-    .initial-page {
-        margin: 10%;
-    }
-}
-
-@media (max-width: 768px) {
-    .logo {
-        max-width: 30%;
-    }
-    .banner-items ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        font-size: 1em;
-    }
-    .banner-items li {
-        margin-left: 0;
-        margin-bottom: 2%;
-    }
-    .banner-items a {
-        font-size: 0.8em;
-    }
-    .slogan {
-        font-size: 2.5em;
-    }
-}
-
-@media (max-width: 576px) {
-    .logo {
-        max-width: 20%;
-    }
-    .banner-items a {
-        font-size: 0.7em;
-    }
-    .slogan {
-        font-size: 2em;
-    }
-    .initial-page {
-        margin: 5%;
-    }
-    button {
-        font-size: 0.7em;
-        padding: 8px 15px;
-    }
-    .conocenos {
-        width: 80%;
-    }
-}
-
-@media (max-width: 768px) {
-    .container-text-video {
-        flex-direction: column;
-        align-items: center;
-    }
-}
