@@ -141,3 +141,45 @@ button:hover {
     padding: 2%;
 }
 
+.footpage-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e6d7b3;
+    color: #610129;
+    padding: 2%;
+}
+
+.info-footpage {
+    text-align: center;
+}
+
+.logo-footpage {
+    max-width: 25%;
+    height: auto;
+}
+
+.links-footpage a {
+    margin: 0 10px;
+    color: #610129;
+    font-size: 1em;
+}
+
+.links-footpage a:hover {
+    color: #217521;
+}
+
+.iconos a {
+    margin: 0 10px;
+    color: #610129;
+    font-size: 1.5em;
+}
+
+.iconos a:hover {
+    color: #217521;
+}
+
+.vertical-line {
+    border-left: 1px solid #610129;
+    height: 100px;
+}
