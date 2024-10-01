@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('fondo/Etiquetas_Cristetto.png');
+    background-image: url('/fondo/Etiquetas_Cristetto.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
