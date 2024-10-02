@@ -32,7 +32,7 @@ a:hover {
 }
 
 .logo {
-    max-width: 20%; 
+    max-width: 25%; 
     height: auto;
 }
 
@@ -58,7 +58,7 @@ a:hover {
 .banner-items a {
     color: #610129; 
     font-weight: bold;
-    font-size: 0.8em; 
+    font-size: 1.2em; 
 }
 
 .banner-items a:hover {
@@ -88,7 +88,7 @@ a:hover {
 button {
     background-color: #e6d7b3; 
     color: #610129; 
-    font-size: 0.5em; 
+    font-size: 1em; 
     padding: 10px 20px; 
     border: none; 
     border-radius: 10px; 
@@ -116,6 +116,12 @@ button:hover {
     transform: scale(1.05); 
 }
 
+.images-container{
+    background-color: #944815;
+    margin: 2%;
+    border-radius: 10px;
+}
+
 .container-video {
     display: flex;
     align-items: center;
@@ -123,7 +129,7 @@ button:hover {
 }
 
 .video {
-    width: 100%;
+    width: 90%;
     padding: 2%;
 }
 .container-text-video {
@@ -139,6 +145,14 @@ button:hover {
 .text-pos {
     flex: 1;
     padding: 2%;
+    font-size: 0.6;
+    text-align: center;
+}
+
+.mini-text{
+    text-align: justify;
+    padding-top: 8em;
+    font-size: 2em;
 }
 
 .footpage-container {
@@ -172,7 +186,7 @@ button:hover {
 .iconos a {
     margin: 0 10px;
     color: #610129;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .iconos a:hover {
